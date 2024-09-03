@@ -20,7 +20,8 @@ list_of_file=[
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trails.ipnyb"
+    "research/trails.ipnyb",
+    "templates/index.html"
 ]
 
 for filepath in list_of_file:
@@ -35,4 +36,3 @@ for filepath in list_of_file:
             logging.info("Creating empty file: {filepath}")
     else:
         logging.info(f"{filename} is already present")
-        
