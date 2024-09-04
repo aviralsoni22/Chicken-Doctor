@@ -20,7 +20,7 @@ list_of_file=[
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "research/trails.ipnyb",
+    "research/trails.ipynb",
     "templates/index.html"
 ]
 
