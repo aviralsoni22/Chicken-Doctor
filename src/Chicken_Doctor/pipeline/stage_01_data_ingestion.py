@@ -1,6 +1,6 @@
 from Chicken_Doctor.config.configuration import ConfigurationManager
 from Chicken_Doctor.components.data_ingestion import DataIngestion
-from Chicken_Doctor.components import logger
+from Chicken_Doctor import logger
 
 STAGE_NAME = "Data Ingestion Stage"
 
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
         obj = DataIngestionTrainingPipeline()
-        obj.main
+        obj.main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<< \n\n x========x")
     except Exception as e:
         logger.exception(e)

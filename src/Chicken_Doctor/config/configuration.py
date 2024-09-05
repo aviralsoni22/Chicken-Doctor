@@ -1,5 +1,5 @@
 from Chicken_Doctor.constants import *
-from Chicken_Doctor.utils import read_yaml, create_directories
+from Chicken_Doctor.utils.common import read_yaml, create_directories
 from Chicken_Doctor.entity.config_entity import DataIngestionConfig
 
 
