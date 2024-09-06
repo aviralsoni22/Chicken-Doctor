@@ -1,10 +1,12 @@
 import os
+from pathlib import Path
 from Chicken_Doctor.constants import *
 from Chicken_Doctor.utils.common import read_yaml, create_directories
 from Chicken_Doctor.entity.config_entity import (DataIngestionConfig,
                                                  PrepareBaseModelConfig,
                                                  PrepareCallbacksConfig,
-                                                 TrainingConfig)
+                                                 TrainingConfig,
+                                                 EvaluationConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -88,3 +90,13 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    def get_validation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model=Path("artifacts/training/model.h5"),
+            training_data=Path("artifacts/data_ingestion/Chicken-fecal-images"),
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
