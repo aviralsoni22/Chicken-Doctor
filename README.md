@@ -11,7 +11,7 @@
 8. Update the main.py
 9. Update the dvc.yaml
 
-##Directions to use the model.
+## Directions to use
 Step1: Go click on the IPv4 address in the description.
 Step2: Edit the url and add "/train" to train the model first (it will take a few minutes).
 Step3: After training edit the url again by removing "/train".
