@@ -11,3 +11,10 @@
 8. Update the main.py
 9. Update the dvc.yaml
 
+##Directions to use the model.
+Step1: Go click on the IPv4 address in the description.
+Step2: Edit the url and add "/train" to train the model first (it will take a few minutes).
+Step3: After training edit the url again by removing "/train".
+Step4: Upload the images and click on predict for prediction.
+
+Note: The server is in us-east region the page may take time to load.
